@@ -265,7 +265,11 @@ namespace Blitzortung_Viewer
                 }
             }
         }
-
+        /// <summary>
+        /// Button Event. Refreshing webView controll on page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Refresh(object sender, RoutedEventArgs e)
         {
 
