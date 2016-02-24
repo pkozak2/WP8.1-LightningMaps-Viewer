@@ -1,0 +1,3 @@
+MainPackage=C:\Users\Piotr\Documents\Visual Studio 2013\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\Release\Blitzortung Viewer_1.0.0.1_Bundle\Blitzortung Viewer_1.0.0.1_AnyCPU.appx
+SymbolPackage=C:\Users\Piotr\Documents\Visual Studio 2013\Projects\Blitzortung Viewer\Blitzortung Viewer\AppPackages\Blitzortung Viewer_1.0.0.1_Test\Blitzortung Viewer_1.0.0.1_AnyCPU.appxsym
+ResourcePack=C:\Users\Piotr\Documents\Visual Studio 2013\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\Release\Blitzortung Viewer_1.0.0.1_Bundle\Blitzortung Viewer_1.0.0.1_language-pl.appx
