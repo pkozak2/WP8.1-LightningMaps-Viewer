@@ -86,7 +86,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MapPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,8 +114,14 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainPage1.xaml.cs">
+      <DependentUpon>MainPage1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MapPage.xaml.cs">
       <DependentUpon>MapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapPage1.xaml.cs">
+      <DependentUpon>MapPage1.xaml</DependentUpon>
     </Compile>
     <Compile Include="PivotPage.xaml.cs">
       <DependentUpon>PivotPage.xaml</DependentUpon>
@@ -120,6 +134,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Flags\af.png" />
+    <Content Include="Assets\Flags\as.png" />
+    <Content Include="Assets\Flags\au.png" />
+    <Content Include="Assets\Flags\eu.png" />
+    <Content Include="Assets\Flags\sa.png" />
+    <Content Include="Assets\Flags\us.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
@@ -154,6 +174,13 @@
       <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Phone</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SplitView-master\SplitView-master\Runtime\Universal.UI.Xaml.Controls\Universal.UI.Xaml.Controls.csproj">
+      <Project>{AD458C94-DA3A-4940-BC31-A370AA0ADB5E}</Project>
+      <Name>Universal.UI.Xaml.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

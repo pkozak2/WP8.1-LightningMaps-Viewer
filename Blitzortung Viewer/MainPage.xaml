@@ -18,28 +18,19 @@
         </Grid.ChildrenTransitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
-        <!-- Title Panel -->
-        <StackPanel Grid.Row="0" Margin="19,0,0,0">
-            <TextBlock Text="LightningMaps Viewer" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="Main menu" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-        </StackPanel>
-
-        <!--TODO: Content should be placed within the following grid-->
-        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
-            <Button x:Uid="LoadMapButton" x:Name="LoadMapButton" Content="Load Map" FontSize="24" FontStretch="Normal" HorizontalAlignment="Stretch" Margin="0,70,0,0" VerticalAlignment="Top" Click="LoadMapView" Height="170" Background="#FF105961"/>
-           <!-- <Button x:Name="Info" Content="Important Info" HorizontalAlignment="Stretch" Margin="0,180,0,0" VerticalAlignment="Top" Click="ImportantInfo"/>
-        --></Grid>
 
         <Grid Grid.Row="2">
-            <TextBlock x:Uid="importantInfo" x:Name="importantInfo" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" TextAlignment="Center" Visibility="Visible"><Run Text="Map loading may take a few seconds. Loading speed is dependent of your internet connection speed."/></TextBlock>
+            <StackPanel>
+                <TextBlock x:Uid="importantInfo" x:Name="importantInfo" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" TextAlignment="Center" Visibility="Visible"><Run Text="Map loading may take a few seconds. Loading speed is dependent of your Internet connection speed."/></TextBlock>
+                <TextBlock x:Uid="howToUse" Margin="0,50,0,0" x:Name="howToUse" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" TextAlignment="Center" Visibility="Visible">
+                    <Run Text="At the bottom left side of your screen you can see button with three bars. When you click on it menu should appear on left side. Select your region. You can zoom-in and zoom-out the map. Data on maps is refreshing every minute."/></TextBlock>
+            </StackPanel>
 
-    
-            <WindowsPhone81:AdMediatorControl x:Name="AdMediator_0895C8" HorizontalAlignment="Center" Height="80" Id="AdMediator-Id-62D17851-50F4-4547-BD59-92FADAC87E81" Margin="0,10,0,0" VerticalAlignment="Bottom" Width="480" BorderBrush="White" BorderThickness="2" Background="White"/>
+            <WindowsPhone81:AdMediatorControl x:Name="AdMediator_0895C8" HorizontalAlignment="Center" Height="50" Id="AdMediator-Id-62D17851-50F4-4547-BD59-92FADAC87E81" Margin="0,10,0,0" VerticalAlignment="Bottom" Width="300" BorderThickness="0"/>
       
         </Grid>
     </Grid>

@@ -117,44 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddAppBarButton.Label" xml:space="preserve">
-    <value>add</value>
-  </data>
-  <data name="Header.Text" xml:space="preserve">
-    <value>MY APPLICATION</value>
-  </data>
   <data name="NavigationFailedExceptionMessage" xml:space="preserve">
     <value>Navigation failed.</value>
-  </data>
-  <data name="NewItemDescription" xml:space="preserve">
-    <value>Item Description: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.</value>
-  </data>
-  <data name="NewItemTitle" xml:space="preserve">
-    <value>Item Title: {0}</value>
-  </data>
-  <data name="Pivot.Title" xml:space="preserve">
-    <value>MY APPLICATION</value>
-  </data>
-  <data name="PivotItem1.Header" xml:space="preserve">
-    <value>first</value>
-  </data>
-  <data name="PivotItem2.Header" xml:space="preserve">
-    <value>second</value>
   </data>
   <data name="refreshButton.Label" xml:space="preserve">
     <value>Odśwież</value>
   </data>
-  <data name="SecondaryButton1.Label" xml:space="preserve">
-    <value>secondary command 1</value>
-  </data>
-  <data name="SecondaryButton2.Label" xml:space="preserve">
-    <value>secondary command 2</value>
-  </data>
   <data name="importantInfo.Text" xml:space="preserve">
-    <value>Ładowanie mapy może zająć kilka sekund. 
+    <value>Ładowanie map może zająć kilka sekund. 
 Prędkość ładowania map burzowych jest zależna od szybkości twojego łącza internetowego.</value>
   </data>
   <data name="LoadMapButton.Content" xml:space="preserve">
     <value>Załaduj Mapę</value>
+  </data>
+  <data name="howToUse.Text" xml:space="preserve">
+    <value>W lewym dolnym rogu ekranu możesz zobaczyć ikonę z trzema paskami. Kliknięcie na nią wywołuje menu po lewej stronie ekranu. Wybierz interesujący Cię fragment mapy, a zostanie pobrana dana mapa. Możesz ją przybliżać i oddalać. Dane na mapie odświeżają się co minutę.</value>
+  </data>
+  <data name="MenuTextAfrica.Text" xml:space="preserve">
+    <value>Afryka</value>
+  </data>
+  <data name="MenuTextAsia.Text" xml:space="preserve">
+    <value>Azja</value>
+  </data>
+  <data name="MenuTextEurope.Text" xml:space="preserve">
+    <value>Europa</value>
+  </data>
+  <data name="MenuTextHome.Text" xml:space="preserve">
+    <value>Strona Główna</value>
+  </data>
+  <data name="MenuTextOceania.Text" xml:space="preserve">
+    <value>Oceania</value>
+  </data>
+  <data name="MenuTextSettings.Text" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="MenuTextSouthAfrica.Text" xml:space="preserve">
+    <value>Południowa Afryka</value>
+  </data>
+  <data name="MenuTextUnitedStates.Text" xml:space="preserve">
+    <value>Stany Zjednoczone</value>
+  </data>
+  <data name="MenuTextWorldMap.Text" xml:space="preserve">
+    <value>Mapa Świata</value>
   </data>
 </root>

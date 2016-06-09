@@ -43,6 +43,8 @@ namespace Blitzortung_Viewer
             AdMediator_0895C8.AdMediatorError += AdMediator_Bottom_AdMediatorError;
             AdMediator_0895C8.AdSdkEvent += AdMediator_Bottom_AdSdkEvent;
 
+            AdMediator_0895C8.AdSdkOptionalParameters[AdSdkNames.MicrosoftAdvertising]["Width"] = 480;
+            AdMediator_0895C8.AdSdkOptionalParameters[AdSdkNames.MicrosoftAdvertising]["Height"] = 80;
         }
 
         /// <summary>
@@ -115,19 +117,31 @@ namespace Blitzortung_Viewer
         }
 
         #endregion
-
+        /// <summary>
+        /// Uruchomienie widoku mapy
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoadMapView(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MapPage));
         }
-
+        /// <summary>
+        /// Pokazanie na ekranie ważnych informacji
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ImportantInfo(object sender, RoutedEventArgs e)
         {
             
                 importantInfo.Visibility = Visibility.Visible;
             
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void AdMediator_Bottom_AdSdkEvent(object sender, Microsoft.AdMediator.Core.Events.AdSdkEventArgs e)
         {
             Debug.WriteLine("AdSdk event {0} by {1}", e.EventName, e.Name);
