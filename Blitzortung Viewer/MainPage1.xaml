@@ -28,14 +28,27 @@
 
                         <Button x:Name="HomeButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" MinHeight="20" MaxHeight="50" HorizontalContentAlignment="Left" Padding="9.5,0" Click="HomeButton_CLick">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="&#xE825;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                <!--<TextBlock Text="&#xE825;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                               -->
+                                <SymbolIcon Symbol="Home" Margin="10,0"/>
                                 <TextBlock x:Uid="MenuTextHome" Text="Home" FontSize="15"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button x:Name="LiveMapButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" MinHeight="20" MaxHeight="50" HorizontalContentAlignment="Left" Click="LiveMapButton_Click" Tag="false">
+                            <StackPanel Orientation="Horizontal">
+                                <!--<TextBlock Text="&#xE774;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                -->
+                                <SymbolIcon Symbol="Map" Margin="10,0"/>
+                                <TextBlock x:Uid="MenuTextLiveMap" Text="Live Map" FontSize="15"/>
                             </StackPanel>
                         </Button>
 
                         <Button x:Name="WorldButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" MinHeight="20" MaxHeight="50" HorizontalContentAlignment="Left" Click="MapPageButton_Click" Tag="image_b_earth">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="&#xE774;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                <!--<TextBlock Text="&#xE774;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                -->
+                                <SymbolIcon Symbol="World" Margin="10,0"/>
                                 <TextBlock x:Uid="MenuTextWorldMap" Text="World Map" FontSize="15"/>
                             </StackPanel>
                         </Button>
@@ -81,7 +94,9 @@
                     <StackPanel Grid.Row="1">
                         <Button x:Name="SettingsButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" HorizontalContentAlignment="Left" IsEnabled="False">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="&#xE713;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                <!--<TextBlock Text="&#xE713;" FontFamily="Segoe MDL2 Assets" Margin="10,0" />
+                                -->
+                                <SymbolIcon Symbol="Setting" Margin="10,0"/>
                                 <TextBlock x:Uid="MenuTextSettings" Text="Settings" FontSize="15"/>
                             </StackPanel>
                         </Button>
@@ -104,9 +119,15 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="HamburgerButton" Grid.Column="0" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="HamburgerButton_Click" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" MinWidth="50" MinHeight="50" MaxWidth="50" MaxHeight="50"/>
+                <!--<Button x:Name="HamburgerButton" Grid.Column="0" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="HamburgerButton_Click" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" MinWidth="50" MinHeight="50" MaxWidth="50" MaxHeight="50"/>
                 <Button x:Name="RefreshButton" Grid.Column="2" FontFamily="Segoe MDL2 Assets" Content="&#xE72C;" Click="RefreshButton_Click" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" MinWidth="50" MinHeight="50" MaxWidth="50" MaxHeight="50"/>
-
+-->
+                <Button x:Name="HamburgerButton" Grid.Column="0" Click="HamburgerButton_Click" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" MinWidth="50" MinHeight="50" MaxWidth="50" MaxHeight="50">
+                    <SymbolIcon Symbol="ShowBcc"/>
+                </Button>
+                <Button x:Name="RefreshButton" Grid.Column="2" Click="RefreshButton_Click" Background="{x:Null}" BorderThickness="0" BorderBrush="{x:Null}" MinWidth="50" MinHeight="50" MaxWidth="50" MaxHeight="50" Visibility="Collapsed">
+                    <SymbolIcon Symbol="Refresh"/>
+                </Button>
             </Grid>
         </Grid>
     </Grid>

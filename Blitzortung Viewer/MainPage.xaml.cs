@@ -9,6 +9,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
+using Windows.Storage;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -37,6 +39,8 @@ namespace Blitzortung_Viewer
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            
 
             AdMediator_0895C8.AdSdkError += AdMediator_Bottom_AdError;
             AdMediator_0895C8.AdMediatorFilled += AdMediator_Bottom_AdFilled;
@@ -118,7 +122,7 @@ namespace Blitzortung_Viewer
 
         private void LoadMapView(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MapPage));
+            this.Frame.Navigate(typeof(LiveMapPage));
         }
 
         private void ImportantInfo(object sender, RoutedEventArgs e)
