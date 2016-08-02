@@ -1,3 +1,3 @@
-MainPackage=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\ARM\Release\Blitzortung Viewer_1.2.0.8_ARM.appx
-SymbolPackage=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\AppPackages\Blitzortung Viewer_1.2.0.8_Test\Blitzortung Viewer_1.2.0.8_ARM.appxsym
-ResourcePack=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\ARM\Release\Blitzortung Viewer_1.2.0.8_language-pl.appx
+MainPackage=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\ARM\Release\Blitzortung Viewer_1.2.0.9_ARM.appx
+SymbolPackage=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\AppPackages\Blitzortung Viewer_1.2.0.9_Test\Blitzortung Viewer_1.2.0.9_ARM.appxsym
+ResourcePack=D:\OneDrive\Programowanie\Visual Studio\Projects\Blitzortung Viewer\Blitzortung Viewer\bin\ARM\Release\Blitzortung Viewer_1.2.0.9_language-pl.appx

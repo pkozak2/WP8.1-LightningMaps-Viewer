@@ -7,6 +7,8 @@ using Template10.Common;
 using System;
 using System.Linq;
 using Windows.UI.Xaml.Data;
+using Windows.Foundation.Metadata;
+using Windows.UI.ViewManagement;
 
 namespace Blitzortung_Viewer_UWP
 {
@@ -29,10 +31,25 @@ namespace Blitzortung_Viewer_UWP
             ShowShellBackButton = _settings.UseShellBackButton;
 
             #endregion
+
+            
         }
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
+            if (ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+            {
+
+                var statusBar = StatusBar.GetForCurrentView();
+                //if (statusBar != null)
+                //{
+                //    statusBar.BackgroundOpacity = 1;
+                //    statusBar.BackgroundColor = Colors.DarkBlue;
+                //    statusBar.ForegroundColor = Colors.White;
+                await statusBar.HideAsync();
+                //}
+            }
+
             if (Window.Current.Content as ModalDialog == null)
             {
                 // create a new frame 

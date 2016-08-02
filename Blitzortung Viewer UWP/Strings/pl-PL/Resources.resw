@@ -131,7 +131,7 @@ Prędkość ładowania map burzowych jest zależna od szybkości twojego łącza
     <value>Załaduj Mapę</value>
   </data>
   <data name="howToUse.Text" xml:space="preserve">
-    <value>W lewym dolnym rogu ekranu możesz zobaczyć ikonę z trzema paskami. Kliknięcie na nią wywołuje menu po lewej stronie ekranu. Wybierz interesujący Cię fragment mapy, a zostanie pobrana dana mapa. Możesz ją przybliżać i oddalać. Dane na mapie odświeżają się co minutę. Jeśli nie widzisz paska z Menu, proszę zainstalować aplikację ponownie.</value>
+    <value>W lewym górnym rogu ekranu możesz zobaczyć ikonę z trzema paskami. Kliknięcie na nią wywołuje menu po lewej stronie ekranu. Wybierz interesujący Cię fragment mapy, a zostanie pobrana dana mapa. Możesz ją przybliżać i oddalać. Dane na mapie odświeżają się co minutę. Jeśli nie widzisz paska z Menu, proszę zainstalować aplikację ponownie.</value>
   </data>
   <data name="MenuTextAfrica.Text" xml:space="preserve">
     <value>Afryka</value>
