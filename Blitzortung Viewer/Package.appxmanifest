@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="13960PiotrKozak.LightningMapsViewer" Publisher="CN=F6B33875-0359-4D00-BCEF-EF86A88FFFED" Version="1.2.0.6" />
+  <Identity Name="13960PiotrKozak.LightningMapsViewer" Publisher="CN=F6B33875-0359-4D00-BCEF-EF86A88FFFED" Version="1.2.0.7" />
   <mp:PhoneIdentity PhoneProductId="d53ef505-eea6-4d98-98e8-66420322baca" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>LightningMaps Viewer</DisplayName>

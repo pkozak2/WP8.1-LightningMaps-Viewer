@@ -17,7 +17,8 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Blitzortung Viewer UWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Blitzortung Viewer UWP_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>40FE580E2EF144CA89C7D266E0E8BF04D1A6834C</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -90,6 +91,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="Blitzortung Viewer UWP_StoreKey.pfx" />
     <None Include="Blitzortung Viewer UWP_TemporaryKey.pfx" />
     <None Include="project.json" />
     <PRIResource Include="Strings\pl-PL\Resources.resw">
@@ -144,6 +146,7 @@
     <Content Include="Assets\Flags\sa.png" />
     <Content Include="Assets\Flags\us.png" />
     <Content Include="Help.htm" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
