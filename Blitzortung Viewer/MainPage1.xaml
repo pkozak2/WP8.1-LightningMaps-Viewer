@@ -79,7 +79,7 @@
                         <Button x:Name="SAmericaButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" MinHeight="20" MaxHeight="50" HorizontalContentAlignment="Left" Click="MapPageButton_Click" Tag="image_b_sa">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="ms-appx:///Assets/Flags/sa.png" Width="21" Margin="10,0"/>
-                                <TextBlock x:Uid="MenuTextSouthAfrica" Text="South America" FontSize="15"/>
+                                <TextBlock x:Uid="MenuTextSouthAmerica" Text="South America" FontSize="15"/>
                             </StackPanel>
                         </Button>
                         <Button x:Name="AfricaButton" Background="{x:Null}" BorderThickness="0" MinWidth="200" MinHeight="20" MaxHeight="50" HorizontalContentAlignment="Left" Click="MapPageButton_Click" Tag="image_b_af">

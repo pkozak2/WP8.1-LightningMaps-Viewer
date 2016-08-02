@@ -1,0 +1,101 @@
+<Page x:Class="Blitzortung_Viewer_UWP.Views.Shell"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Controls="using:Template10.Controls"
+      xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+      xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:Blitzortung_Viewer_UWP.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:views="using:Blitzortung_Viewer_UWP.Views"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      mc:Ignorable="d">
+
+    <Controls:HamburgerMenu x:Name="MyHamburgerMenu">
+
+        <Controls:HamburgerMenu.PrimaryButtons>
+            <!--  mainpage button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:MainPage" >
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48" Symbol="Home" />
+                    <TextBlock x:Uid="MenuTextHome" Margin="12,0,0,0" VerticalAlignment="Center" Text="Home" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  LiveMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:LiveMapPage">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48" Symbol="Map" />
+                    <TextBlock x:Uid="MenuTextLiveMap" Margin="12,0,0,0" VerticalAlignment="Center" Text="Live Map" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  WorldMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_earth">
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48" Symbol="World" />
+                    <TextBlock x:Uid="MenuTextWorldMap" Margin="12,0,0,0" VerticalAlignment="Center" Text="World Map" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  EuropeMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_eu">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/eu.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextEurope" Margin="12,0,0,0" VerticalAlignment="Center" Text="Europe" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  OceaniaMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_oc">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/au.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextOceania" Margin="12,0,0,0" VerticalAlignment="Center" Text="Oceania" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  NAmericaMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_us">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/us.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextUnitedStates" Margin="12,0,0,0" VerticalAlignment="Center" Text="United States" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  AsiaMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_as">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/as.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextAsia" Margin="12,0,0,0" VerticalAlignment="Center" Text="Asia" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  SAmericaMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_sa">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/sa.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextSouthAmerica" Margin="12,0,0,0" VerticalAlignment="Center" Text="South America" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+            <!--  AfricaMap button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:ImageMapPage" PageParameter="image_b_af">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="ms-appx:///Assets/Flags/af.png" Width="21" Margin="10,18"/>
+                    <TextBlock x:Uid="MenuTextAfrica" Margin="12,0,0,0" VerticalAlignment="Center" Text="Africa" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+        </Controls:HamburgerMenu.PrimaryButtons>
+
+        <!--<Controls:HamburgerMenu.SecondaryButtons>
+            --><!--  settingspage button  --><!--
+            <Controls:HamburgerButtonInfo x:Name="SettingsButton" PageParameter="0"
+                                          PageType="views:SettingsPage">
+                <Controls:HamburgerButtonInfo.NavigationTransitionInfo>
+                    <SuppressNavigationTransitionInfo />
+                </Controls:HamburgerButtonInfo.NavigationTransitionInfo>
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"
+                                Symbol="Setting" />
+                    <TextBlock x:Uid="MenuTextSettings" Margin="12,0,0,0" VerticalAlignment="Center"
+                               Text="Settings" />
+                </StackPanel>
+            </Controls:HamburgerButtonInfo>
+        </Controls:HamburgerMenu.SecondaryButtons>-->
+
+    </Controls:HamburgerMenu>
+
+</Page>
+

@@ -131,7 +131,7 @@ Loading speed is dependent of your Internet connection speed.</value>
     <value>Load Map</value>
   </data>
   <data name="howToUse.Text" xml:space="preserve">
-    <value>At the bottom left side of your screen you can see button with three bars. When you click on it menu should appear on left side. Select your region. You can zoom-in and zoom-out the map. Data on maps is refreshing every minute.
+    <value>At the top left side of your screen you can see button with three bars. When you click on it menu should appear on left side. Select your region. You can zoom-in and zoom-out the map. Data on maps is refreshing every minute.
 If you don't see menu bars, please reinstall application.</value>
   </data>
   <data name="MenuTextAfrica.Text" xml:space="preserve">
@@ -152,7 +152,7 @@ If you don't see menu bars, please reinstall application.</value>
   <data name="MenuTextSettings.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="MenuTextSouthAfrica.Text" xml:space="preserve">
+  <data name="MenuTextSouthAmerica.Text" xml:space="preserve">
     <value>South America</value>
   </data>
   <data name="MenuTextUnitedStates.Text" xml:space="preserve">

@@ -117,59 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NavigationFailedExceptionMessage" xml:space="preserve">
-    <value>Navigation failed.</value>
+  <data name="PleaseWaitString" xml:space="preserve">
+    <value>Please Wait!</value>
   </data>
-  <data name="refreshButton.Label" xml:space="preserve">
-    <value>Odśwież</value>
+  <data name="RefreshAppBarButton.Label" xml:space="preserve">
+    <value>Refresh</value>
   </data>
   <data name="importantInfo.Text" xml:space="preserve">
-    <value>Ładowanie map może zająć kilka sekund. 
-Prędkość ładowania map burzowych jest zależna od szybkości twojego łącza internetowego.</value>
+    <value>Map loading may take a few seconds. 
+Loading speed is dependent of your Internet connection speed.</value>
   </data>
   <data name="LoadMapButton.Content" xml:space="preserve">
-    <value>Załaduj Mapę</value>
+    <value>Load Map</value>
   </data>
   <data name="howToUse.Text" xml:space="preserve">
-    <value>W lewym górnym rogu ekranu możesz zobaczyć ikonę z trzema paskami. Kliknięcie na nią wywołuje menu po lewej stronie ekranu. Wybierz interesujący Cię fragment mapy, a zostanie pobrana dana mapa. Możesz ją przybliżać i oddalać. Dane na mapie odświeżają się co minutę. Jeśli nie widzisz paska z Menu, proszę zainstalować aplikację ponownie.</value>
+    <value>At the bottom left side of your screen you can see button with three bars. When you click on it menu should appear on left side. Select your region. You can zoom-in and zoom-out the map. Data on maps is refreshing every minute.
+If you don't see menu bars, please reinstall application.</value>
   </data>
   <data name="MenuTextAfrica.Text" xml:space="preserve">
-    <value>Afryka</value>
+    <value>Africa</value>
   </data>
   <data name="MenuTextAsia.Text" xml:space="preserve">
-    <value>Azja</value>
+    <value>Asia</value>
   </data>
   <data name="MenuTextEurope.Text" xml:space="preserve">
-    <value>Europa</value>
+    <value>Europe</value>
   </data>
   <data name="MenuTextHome.Text" xml:space="preserve">
-    <value>Strona Główna</value>
+    <value>Home</value>
   </data>
   <data name="MenuTextOceania.Text" xml:space="preserve">
     <value>Oceania</value>
   </data>
   <data name="MenuTextSettings.Text" xml:space="preserve">
-    <value>Ustawienia</value>
+    <value>Settings</value>
   </data>
   <data name="MenuTextSouthAmerica.Text" xml:space="preserve">
-    <value>Południowa Ameryka</value>
+    <value>South America</value>
   </data>
   <data name="MenuTextUnitedStates.Text" xml:space="preserve">
-    <value>Stany Zjednoczone</value>
+    <value>United States</value>
   </data>
   <data name="MenuTextWorldMap.Text" xml:space="preserve">
-    <value>Mapa Świata</value>
+    <value>World Map</value>
   </data>
   <data name="MenuTextLiveMap.Text" xml:space="preserve">
-    <value>MAPA NA ŻYWO</value>
+    <value>LIVE MAP</value>
   </data>
   <data name="CheckInternet" xml:space="preserve">
-    <value>Sprawdź połączenie z Internetem</value>
+    <value>Check Internet connection</value>
   </data>
   <data name="UpdateHeader" xml:space="preserve">
-    <value>Ostatnia aktualizacja</value>
+    <value>Last Update</value>
   </data>
   <data name="UpdateText" xml:space="preserve">
-    <value>Dodano: Mapa na żywo (w menu)</value>
+    <value>Added: Live Map (in Menu)</value>
   </data>
 </root>

@@ -166,7 +166,8 @@ namespace Blitzortung_Viewer
             catch (FormatException myE)
             {
                 // Bad address
-                webView.NavigateToString(String.Format("<h1>Address is invalid, try again.</h1>"));
+
+                webView.NavigateToString(String.Format("<h1>Address is invalid, try again.</h1>" + myE.ToString()));
             }
         }
 
