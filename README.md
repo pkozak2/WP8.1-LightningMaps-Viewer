@@ -12,7 +12,7 @@ W katalogu **Blitzortung Viewer UWP/Utils/** należy utworzyć nową klasę **Ke
 
 >public static string MapServiceToken = "*BingMapServiceToken*";
 >
->public static string ws_server = "*WebocketServer*";
+>public static string ws_server = "*WebSocketServer*";
 >
 >public static string historyRegion1 = "*API URL*";
 >
