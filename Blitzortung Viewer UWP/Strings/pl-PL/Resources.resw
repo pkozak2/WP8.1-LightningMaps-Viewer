@@ -172,4 +172,7 @@ Prędkość ładowania map burzowych jest zależna od szybkości twojego łącza
   <data name="UpdateText" xml:space="preserve">
     <value>Dodano: Mapa na żywo (w menu)</value>
   </data>
+  <data name="MenuTextBingLiveMap.Text" xml:space="preserve">
+    <value>MAPA NA ŻYWO (Beta)</value>
+  </data>
 </root>

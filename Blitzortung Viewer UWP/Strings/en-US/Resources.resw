@@ -173,4 +173,7 @@ If you don't see menu bars, please reinstall application.</value>
   <data name="UpdateText" xml:space="preserve">
     <value>Added: Live Map (in Menu)</value>
   </data>
+  <data name="MenuTextBingLiveMap.Text" xml:space="preserve">
+    <value>LIVE MAP (Beta)</value>
+  </data>
 </root>

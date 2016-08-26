@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Blitzortung_Viewer_UWP.Views.BingLiveMapPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Blitzortung_Viewer_UWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel  x:Name="HeaderPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="48" Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+            <RelativePanel x:Name="ButtonsHeaderPanel" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0,0,10,0">
+                <Button x:Name="AddToFavouritesButton" Background="Transparent" Margin="5,0" >
+                    <TextBlock x:Name="AddToFavouritesButtonText" Text="" FontFamily="Segoe MDL2 Assets" FontSize="20"/>
+                </Button>
+            </RelativePanel>
+        </RelativePanel>
+        <Maps:MapControl x:Name="Map" 
+                         MapServiceToken="{x:Bind MapServiceToken, Mode=OneTime}" 
+                         ZoomInteractionMode="GestureAndControl" 
+                         RelativePanel.Below="HeaderPanel" 
+                         RelativePanel.AlignBottomWithPanel="True" 
+                         RelativePanel.AlignLeftWithPanel="True" 
+                         RelativePanel.AlignRightWithPanel="True"/>
+
+
+    </RelativePanel>
+</Page>
