@@ -24,7 +24,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="48,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateNormal">
@@ -32,7 +32,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateWide">
@@ -40,18 +40,20 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
 
-
+        <RelativePanel  x:Name="HeaderPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="48" Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+            
+        </RelativePanel>
         <!--  content  -->
         <ScrollViewer ZoomMode="Enabled" MinZoomFactor="0.5"
 			HorizontalScrollBarVisibility="Auto"
-			VerticalScrollBarVisibility="Auto">
+			VerticalScrollBarVisibility="Auto" RelativePanel.Below="HeaderPanel">
             <Image x:Name="MapImage" Stretch="Fill" Source="{x:Bind ViewModel.Url, Mode=OneWay}"/>
         </ScrollViewer>
 

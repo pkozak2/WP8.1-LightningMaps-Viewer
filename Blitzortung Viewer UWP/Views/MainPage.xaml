@@ -23,7 +23,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="48,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateNormal">
@@ -31,7 +31,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateWide">
@@ -39,11 +39,15 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+        
+        <RelativePanel  x:Name="HeaderPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="48" Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+            <TextBlock x:Uid="MenuTextHome" Text="Home" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="20" Margin="10,0,0,0"/>
+        </RelativePanel>
 
         <StackPanel RelativePanel.AlignVerticalCenterWithPanel="True">
             <TextBlock x:Uid="importantInfo" x:Name="importantInfo" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" TextAlignment="Center" Visibility="Visible"><Run Text="Map loading may take a few seconds. Loading speed is dependent of your Internet connection speed."/></TextBlock>

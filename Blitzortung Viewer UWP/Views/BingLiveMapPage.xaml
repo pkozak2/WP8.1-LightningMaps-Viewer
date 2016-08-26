@@ -9,12 +9,38 @@
     mc:Ignorable="d">
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="48,0,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <RelativePanel  x:Name="HeaderPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="48" Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
-            <RelativePanel x:Name="ButtonsHeaderPanel" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="0,0,10,0">
-                <Button x:Name="AddToFavouritesButton" Background="Transparent" Margin="5,0" >
-                    <TextBlock x:Name="AddToFavouritesButtonText" Text="" FontFamily="Segoe MDL2 Assets" FontSize="20"/>
-                </Button>
-            </RelativePanel>
+            <TextBlock x:Uid="MenuTextBingLiveMap" Text="Live Map" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="20" Margin="10,0,0,0"/>
         </RelativePanel>
         <Maps:MapControl x:Name="Map" 
                          MapServiceToken="{x:Bind MapServiceToken, Mode=OneTime}" 
@@ -22,7 +48,8 @@
                          RelativePanel.Below="HeaderPanel" 
                          RelativePanel.AlignBottomWithPanel="True" 
                          RelativePanel.AlignLeftWithPanel="True" 
-                         RelativePanel.AlignRightWithPanel="True"/>
+                         RelativePanel.AlignRightWithPanel="True"
+                         Loaded="OnLoaded"/>
 
 
     </RelativePanel>

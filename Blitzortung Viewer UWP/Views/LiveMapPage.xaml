@@ -23,8 +23,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="48,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateNormal">
@@ -32,8 +31,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateWide">
@@ -41,8 +39,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
+                        <Setter Target="HeaderPanel.(FrameworkElement.Margin)" Value="0,0,0,0"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -60,8 +57,11 @@
             </controls:PageHeader.SecondaryCommands>
 
         </controls:PageHeader>-->
+        <RelativePanel  x:Name="HeaderPanel" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" Height="48" Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
+            <TextBlock x:Uid="MenuTextLiveMap" Text="Live Map" RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="20" Margin="10,0,0,0"/>
+        </RelativePanel>
 
-        <WebView x:Name="web" DOMContentLoaded="webContentLoaded" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
+        <WebView x:Name="web" DOMContentLoaded="webContentLoaded" RelativePanel.Below="HeaderPanel" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
 
         <CommandBar RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
             <AppBarButton x:Uid="RefreshAppBarButton" Icon="Refresh" Click="RefreshClick" Label=""/>
