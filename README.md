@@ -1,14 +1,14 @@
-LightningMaps Viewer
+ï»¿LightningMaps Viewer
 ========================
 
-W Repozytorium istniej¹ dwa projekty:
+W Repozytorium istniejÄ… dwa projekty:
 Blitzortung Viewer UWP - Dla systemu Windows 10 Mobile
 Blitzortung Viewer - Dla systemu Windows Phone 8.1
 
-Kod dla systemu Windows 10 Mobile siê nie kompiluje?
+Kod dla systemu Windows 10 Mobile siÄ™ nie kompiluje?
 --------------
 
-W klatalogu Blitzortung Viewer UWP/Utils/ nale¿y utworzyæ now¹ klasê Keys.cs o poni¿szej strukturze:
+W klatalogu Blitzortung Viewer UWP/Utils/ naleÅ¼y utworzyÄ‡ nowÄ… klasÄ™ Keys.cs o poniÅ¼szej strukturze:
 
 >public static string MapServiceToken = "*BingMapServiceToken*";
 >public static string ws_server = "*WebocketServer*";
